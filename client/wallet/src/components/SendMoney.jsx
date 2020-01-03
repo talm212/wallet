@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "./SendMoney.css";
 
 class SendMoney extends React.Component {
   state = {
@@ -40,15 +41,16 @@ class SendMoney extends React.Component {
               this.setState({ amount: e.target.value });
             }}
           ></input>
-          <button
-            type="button"
-            onClick={() => {
-              this.makeTransition();
-            }}
-          >
-            Send
-          </button>
         </div>
+        <button
+          className="myButton"
+          type="button"
+          onClick={() => {
+            this.makeTransition();
+          }}
+        >
+          Send
+        </button>
       </div>
     );
   }
