@@ -1,0 +1,26 @@
+run mongo:
+mongod
+(and then in another tab)
+
+init db: (once)
+use bankDB
+db.users.insert({"name":"tal","balance":10000})
+db.users.insert({"name":"liora","balance":10000})
+
+running the server:
+npm run dev (dev to refrash for any save)
+
+the server run on port 8000
+
+server tests:
+npm tests
+
+
+running the client:
+npm start
+
+the client run on port 3000
+
+client tests:
+npm tests
+
