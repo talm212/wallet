@@ -24,3 +24,28 @@ the client run on port 3000
 client tests:
 npm tests
 
+*******
+add to the client error msg ui
+add validation on the data and show where the data missing or incorrect
+
+need to add tests:
+client
+fill form and submit (check balance befor and after)
+send false data and check what happen to the balance and to ui
+click on the button without fill the form
+send money to myself and check if the balance remain the same
+
+server
+
+check new class dblogic
+transfer money to the same user (from and send shold be the same)
+send money and check balance in both users
+send from true user to false user
+transfer money multiple times
+check multi sessions (
+	on the same users
+	diffrent users
+	multiple difrent request
+	send and get balance in the same time
+)
+
